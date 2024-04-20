@@ -254,7 +254,7 @@ export default function Hotels() {
 								style={{
 									borderRadius: "4px",
 									border: openRoomsAndGuestPopper
-										? "2px solid #065af3"
+										? "2px solid #ec5b24"
 										: "1px solid rgba(0,0,0,0.2)",
 									padding: "8px 5px 14px",
 								}}
@@ -263,7 +263,7 @@ export default function Hotels() {
 									style={{
 										fontSize: 12,
 										color: openRoomsAndGuestPopper
-											? "#065af3"
+											? "#ec5b24"
 											: "rgba(0, 0, 0, 0.6)",
 										textAlign: "left",
 										marginLeft: "3px",
@@ -271,7 +271,7 @@ export default function Hotels() {
 								>
 									Rooms & Guests
 								</legend>
-								<Typography>
+								<Typography color="#000">
 									{rooms} Rooms, {guests} Guests
 								</Typography>
 							</fieldset>
@@ -315,9 +315,9 @@ export default function Hotels() {
 											direction={"row"}
 											alignItems={"center"}
 											sx={{
-												color: "#065af3",
+												color: "#ec5b24",
 												fontWeight: 600,
-												border: "2px solid #065af3",
+												border: "2px solid #ec5b24",
 												borderRadius: "8px",
 												px: 1,
 												textAlign: "center",
@@ -392,9 +392,9 @@ export default function Hotels() {
 											direction={"row"}
 											alignItems={"center"}
 											sx={{
-												color: "#065af3",
+												color: "#ec5b24",
 												fontWeight: 600,
-												border: "2px solid #065af3",
+												border: "2px solid #ec5b24",
 												borderRadius: "8px",
 												px: 1,
 												textAlign: "center",
@@ -496,8 +496,6 @@ export default function Hotels() {
 				</Stack>
 				{/* </Stack> */}
 			</Container>
-			<OffersCarousel />
-			<PopularDestinations />
 		</Box>
 	);
 }

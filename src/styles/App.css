@@ -33,10 +33,13 @@
 .bus-search-pannel .MuiInput-root:hover:not(.Mui-disabled, .Mui-error):before {
   border-bottom: 1px solid rgba(0, 0, 0, 0.42);
 }
+.bus-search-pannel,
+.hotel-main-pannel,
 .search-pannel {
   position: relative;
-  padding-top:30px;
-  padding-bottom:30px;
+  padding-top: 30px !important;
+  padding-bottom: 30px !important;
+  margin-bottom: 94px !important;
   color: white !important;
 }
 
