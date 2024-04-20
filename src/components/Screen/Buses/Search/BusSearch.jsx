@@ -402,7 +402,7 @@ export default function BusSearch() {
 									color:
 										sortState.active &&
 										sortState.type === type
-											? "#ec5b24"
+											? "#065af3"
 											: "#000",
 									cursor: "pointer",
 								}}
@@ -411,7 +411,7 @@ export default function BusSearch() {
 							>
 								<Typography fontSize={16}>{type}</Typography>
 								<FaArrowDownLong
-									color="#ec5b24"
+									color="#065af3"
 									size={12}
 									style={{
 										visibility: `${
@@ -494,14 +494,14 @@ export default function BusSearch() {
 									sx={{
 										bgcolor: "#FFF",
 										border: `1px solid ${
-											busType[0] ? "#ec5b24" : "#fff"
+											busType[0] ? "#065af3" : "#fff"
 										}`,
 										py: 0.2,
 										borderRadius: "8px",
 										width: 80,
 										cursor: "pointer",
 										color: `${
-											busType[0] ? "#ec5b24" : "#000"
+											busType[0] ? "#065af3" : "#000"
 										}`,
 									}}
 									alignItems={"center"}
@@ -514,14 +514,14 @@ export default function BusSearch() {
 									sx={{
 										bgcolor: "#FFF",
 										border: `1px solid ${
-											busType[1] ? "#ec5b24" : "#fff"
+											busType[1] ? "#065af3" : "#fff"
 										}`,
 										py: 0.2,
 										borderRadius: "8px",
 										width: 80,
 										cursor: "pointer",
 										color: `${
-											busType[1] ? "#ec5b24" : "#000"
+											busType[1] ? "#065af3" : "#000"
 										}`,
 									}}
 									onClick={() => handleBusType(1)}
@@ -599,14 +599,14 @@ export default function BusSearch() {
 														departureTimeRange[
 															index
 														]
-															? "#ec5b24"
+															? "#065af3"
 															: "#fff"
 													}`,
 													color: ` ${
 														departureTimeRange[
 															index
 														]
-															? "#ec5b24"
+															? "#065af3"
 															: "#000"
 													}`,
 												}}

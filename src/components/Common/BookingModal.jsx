@@ -1,8 +1,3 @@
-/************
- This is the component which will be displayed when the user
- initiates the payment.
-*************/
-
 import Box from "@mui/material/Box";
 import Modal from "@mui/material/Modal";
 import Typography from "@mui/material/Typography";
@@ -43,10 +38,10 @@ export default function BookingModal({ bookingWait }) {
 							<Typography
 								fontSize={24}
 								fontWeight={600}
-								color="#ec5b24"
+								color="#065af3"
 							>
 								Booking successful!{" "}
-								<IoIosThumbsUp color="#ec5b24" />
+								<IoIosThumbsUp color="#065af3" />
 							</Typography>
 							<Typography
 								fontSize={14}

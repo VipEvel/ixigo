@@ -19,6 +19,7 @@ import { useNavigate } from "react-router-dom";
 import { useTrainSearchContext } from "../../../Contexts/TrainSearchProvider";
 import TrainStationInput from "./TrainStationInput";
 import { TRAIN_STATIONS } from "../../../constants";
+import "../../../styles/Flights.css"
 
 const popperSX = {
 	border: 0,
@@ -110,7 +111,7 @@ export default function Trains() {
 					position={"absolute"}
 					sx={{
 						backgroundImage:
-							"url('https://images.ixigo.com/image/upload/misc/f3c5fc0564afd3390b0d7fedfba8e8c2-qsbuo.webp')",
+							"url('//imgak.mmtcdn.com/pwa_v3/pwa_commons_assets/desktop/bg1.jpg')",
 						width: "100%",
 						height: "550px",
 						backgroundSize: "cover",
@@ -211,6 +212,7 @@ export default function Trains() {
 					}}
 				/>
 				<Button
+				className="search-button"
 					sx={{
 						color: "#fff",
 						m: "auto",

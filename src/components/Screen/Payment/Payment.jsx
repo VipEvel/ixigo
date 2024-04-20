@@ -183,7 +183,7 @@ export default function Payment() {
 							py: 1,
 						}}
 					>
-						<FaRegClock size={14} color="#ec5b24" />
+						<FaRegClock size={14} color="#065af3" />
 						<Typography fontWeight={600} fontSize={16}>
 							{mins} : {secs}
 						</Typography>
@@ -222,7 +222,7 @@ export default function Payment() {
 							width: "250px",
 							display: "flex",
 							justifyContent: "space-between",
-							bgcolor: "#ec5b2405",
+							bgcolor: "#065af305",
 							overflow: "unset",
 						}}
 					>
@@ -235,7 +235,7 @@ export default function Payment() {
 								display: "flex",
 								gap: 2,
 								justifyContent: "flex-start",
-								bgcolor: tabIndex === 0 ? "#ec5b2410" : "",
+								bgcolor: tabIndex === 0 ? "#065af310" : "",
 								fontSize: 20,
 								fontWeight: 600,
 								textTransform: "none",
@@ -250,7 +250,7 @@ export default function Payment() {
 								display: "flex",
 								gap: 2,
 								justifyContent: "flex-start",
-								bgcolor: tabIndex === 1 ? "#ec5b2410" : "",
+								bgcolor: tabIndex === 1 ? "#065af310" : "",
 								fontSize: 20,
 								fontWeight: 600,
 								textTransform: "none",
@@ -402,7 +402,7 @@ export default function Payment() {
 						borderRadius: 2,
 					}}
 				>
-					<Typography fontSize={20} color={"#ec5b24"} sx={{ mb: 2 }}>
+					<Typography fontSize={20} color={"#065af3"} sx={{ mb: 2 }}>
 						OOPS! Session Timed Out.
 					</Typography>
 					<Typography fontWeight={500} sx={{ mb: 2 }}>

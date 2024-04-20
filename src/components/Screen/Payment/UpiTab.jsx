@@ -96,7 +96,7 @@ export default function UpiTab({
 											sx={{
 												px: 3,
 												backgroundColor: "transparent",
-												background: `linear-gradient(to right, #aa1004 50%, #ec5b24 50%)`,
+												background: `linear-gradient(to right, #aa1004 50%, #065af3 50%)`,
 												backgroundSize: "200% 100%",
 												backgroundPosition: generatingQR
 													? "left bottom"
@@ -144,7 +144,7 @@ export default function UpiTab({
 								sx={{ p: 3 }}
 								alignItems={"flex-start"}
 							>
-								<Typography color={"#ec5b24"}>
+								<Typography color={"#065af3"}>
 									UPI ID / VPA
 								</Typography>
 								<TextField
@@ -323,7 +323,7 @@ export default function UpiTab({
 										sx={{
 											width: `${time / 3}%`,
 											height: "100%",
-											bgcolor: "#ec5b24",
+											bgcolor: "#065af3",
 											borderRadius: 2,
 											transition: "all 1s",
 										}}

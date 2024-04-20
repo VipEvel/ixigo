@@ -125,7 +125,7 @@ export default function FlightCardSummary({
 				</Stack>
 			</Stack>
 			<Stack direction={"row"} alignItems={"center"} gap={5}>
-				<Typography fontWeight={600} variant="h5" color={"#ec5b24"}>
+				<Typography fontWeight={600} variant="h5" color={"#065af3"}>
 					<span style={{ fontWeight: 400 }}>₹</span>
 					{ticketPrice}
 				</Typography>

@@ -1,14 +1,6 @@
-# Ixigo Clone - React Project
+# MakeMyTrip Clone - React Project
 
-Welcome to the Ixigo Clone React project! This project aims to replicate the functionality of the popular booking platform Ixigo. Users can perform various actions such as login/signup, search for flights, trains, buses, and hotels, as well as book tickets and hotel rooms.
-
-## Hosted Link
-
-You can access the project via the following link: [Ixigo Clone](https://ixigo-clone-by-aryan.netlify.app/)
-
-## GitHub Repository
-
-You can find the source code for this project on GitHub: [Ixigo Clone GitHub Repository](https://github.com/Aryan0Jain/Ixigo-Clone---React-Project-1---hb4b95z8t9k9)
+Welcome to the MakeMyTrip Clone React project! This project aims to replicate the functionality of the popular booking platform MakeMyTrip. Users can perform various actions such as login/signup, search for flights, trains, buses, and hotels, as well as book tickets and hotel rooms.
 
 ## Tech Stack
 
@@ -33,13 +25,9 @@ You can find the source code for this project on GitHub: [Ixigo Clone GitHub Rep
 
 To run this project locally, follow these steps:
 
-1. Clone the repository:
+1. Clone the repository
 
-### git clone git@github.com:Aryan0Jain/Ixigo-Clone---React-Project-1---hb4b95z8t9k9.git
-
-2. Navigate into the project directory:
-
-### cd Ixigo-Clone---React-Project-1---hb4b95z8t9k9
+2. Navigate into the project directory
 
 3. Install dependencies:
 
@@ -47,6 +35,6 @@ To run this project locally, follow these steps:
 
 4. Start the development server:
 
-### npm start
+### npm start or npm run start
 
 5. Open your browser and visit [http://localhost:3000](http://localhost:3000) to view the application.

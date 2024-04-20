@@ -321,9 +321,9 @@ export default function SearchInputPannel({
 									direction={"row"}
 									alignItems={"center"}
 									sx={{
-										color: "#ec5b24",
+										color: "#065af3",
 										fontWeight: 600,
-										border: "2px solid #ec5b24",
+										border: "2px solid #065af3",
 										borderRadius: "8px",
 										px: 1,
 										textAlign: "center",
@@ -398,9 +398,9 @@ export default function SearchInputPannel({
 									direction={"row"}
 									alignItems={"center"}
 									sx={{
-										color: "#ec5b24",
+										color: "#065af3",
 										fontWeight: 600,
-										border: "2px solid #ec5b24",
+										border: "2px solid #065af3",
 										borderRadius: "8px",
 										px: 1,
 										textAlign: "center",

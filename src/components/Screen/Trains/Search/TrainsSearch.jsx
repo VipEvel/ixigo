@@ -319,17 +319,17 @@ export default function TrainsSearch() {
 								fontWeight: 600,
 							},
 							"& button:hover": {
-								border: "1px solid #ec5b24 !important",
-								color: "#ec5b24",
+								border: "1px solid #065af3 !important",
+								color: "#065af3",
 							},
 							"& button.Mui-selected": {
-								border: "1px solid #ec5b24 !important",
-								bgcolor: "#ec5b24",
+								border: "1px solid #065af3 !important",
+								bgcolor: "#065af3",
 								color: "#ffffff",
 							},
 							"& button.Mui-selected:hover": {
-								border: "1px solid #ec5b24 !important",
-								bgcolor: "#ec5b24",
+								border: "1px solid #065af3 !important",
+								bgcolor: "#065af3",
 								color: "#ffffff",
 							},
 							"& p": {
@@ -391,15 +391,15 @@ export default function TrainsSearch() {
 								},
 								"& button:hover": {
 									background: "none",
-									color: "#ec5b24",
+									color: "#065af3",
 								},
 								"& button.Mui-selected": {
 									background: "none",
-									color: "#ec5b24",
+									color: "#065af3",
 								},
 								"& button.Mui-selected:hover": {
 									background: "none",
-									// color: "#ec5b24",
+									// color: "#065af3",
 								},
 								"& button:active": {
 									// border: "none",
@@ -407,7 +407,7 @@ export default function TrainsSearch() {
 									// m: 0,
 									// fontWeight: 600,
 									background: "none",
-									color: "#ec5b24",
+									color: "#065af3",
 								},
 							}}
 						>

@@ -118,7 +118,7 @@ export default function TrainCard({
 							sx={{
 								textTransform: "uppercase",
 								fontSize: "14px",
-								color: "#ec5b24",
+								color: "#065af3",
 							}}
 						>
 							{source}
@@ -179,7 +179,7 @@ export default function TrainCard({
 							sx={{
 								textTransform: "uppercase",
 								fontSize: "14px",
-								color: "#ec5b24",
+								color: "#065af3",
 							}}
 						>
 							{destination}

@@ -147,7 +147,7 @@ export default function BusCard({ busDetails, departureDate, handleBook }) {
 													alignItems={"center"}
 													sx={{ fontSize: 12 }}
 												>
-													<Icon color="#ec5b24" />
+													<Icon color="#065af3" />
 													<Typography>
 														{cur}
 													</Typography>

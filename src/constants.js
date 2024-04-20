@@ -244,10 +244,10 @@ export const FACILITIES = [
 	{ type: "Snack Box", svg: IoFastFood },
 ];
 export const TABS = [
-	{ tabTitle: "Flights", tabLogo: flightSVG },
-	{ tabTitle: "Trains", tabLogo: trainSVG },
-	{ tabTitle: "Buses", tabLogo: busSVG },
-	{ tabTitle: "Hotels", tabLogo: hotelSVG },
+	{ tabTitle: "Flights", tabLogo: 'flight-icon' },
+	{ tabTitle: "Trains", tabLogo: 'train-icon' },
+	{ tabTitle: "Buses", tabLogo: 'bus-icon' },
+	{ tabTitle: "Hotels", tabLogo: 'hotel-icon' },
 ];
 export const FLIGHT_SORTING_METHODS = [
 	{ name: "RECOMMENDED", value: "recommended" },

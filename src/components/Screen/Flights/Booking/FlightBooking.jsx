@@ -460,7 +460,7 @@ export default function FlightBooking() {
 										Total Fare
 									</Typography>
 									<Typography
-										color={"#EC5B24"}
+										color={"#065af3"}
 										fontSize={20}
 										fontWeight={600}
 									>

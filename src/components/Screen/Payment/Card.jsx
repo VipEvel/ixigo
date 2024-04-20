@@ -49,7 +49,7 @@ export function CardActive() {
 				y="2"
 				width="16"
 				height="2"
-				fill="#EC5B24"
+				fill="#065af3"
 			/>
 			<rect
 				opacity="0.3"
@@ -57,13 +57,13 @@ export function CardActive() {
 				y="8"
 				width="16"
 				height="6"
-				fill="#EC5B24"
+				fill="#065af3"
 			/>
 			<path
 				fillRule="evenodd"
 				clipRule="evenodd"
 				d="M18 0H2C0.89 0 0.01 0.89 0.01 2L0 14C0 15.11 0.89 16 2 16H18C19.11 16 20 15.11 20 14V2C20 0.89 19.11 0 18 0ZM18 14H2V8H18V14ZM2 4H18V2H2V4Z"
-				fill="#EC5B24"
+				fill="#065af3"
 			/>
 		</svg>
 	);

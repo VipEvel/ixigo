@@ -395,7 +395,7 @@ export default function FlightsSearchDesktop() {
 				<Stack>
 					<Typography>
 						Max Price:{" "}
-						<span style={{ color: "#ec5b24" }}>
+						<span style={{ color: "#065af3" }}>
 							{priceLabelFormat(price)}
 						</span>
 					</Typography>

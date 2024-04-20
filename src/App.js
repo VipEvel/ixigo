@@ -1,65 +1,48 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import "../styles/App.css";
-import Navbar from "./Common/Navbar.jsx";
+import "./styles/App.css";
+import Navbar from "./components/Common/Navbar.jsx";
 import { ThemeProvider } from "@mui/material";
 
-// To add the lazy loading the components are imported using lazy.
-
-// import Flights from "./Screen/Flights/Flights.jsx";
-// import FlightSearch from "./Screen/Flights/Search/FlightSearch.jsx";
-// import FlightBooking from "./Screen/Flights/Booking/FlightBooking.jsx";
-// import Trains from "./Screen/Trains/Trains.jsx";
-// import TrainsSearch from "./Screen/Trains/Search/TrainsSearch.jsx";
-// import TrainBooking from "./Screen/Trains/Booking/TrainBooking.jsx";
-// import Buses from "./Screen/Buses/Buses.jsx";
-// import BusSearch from "./Screen/Buses/Search/BusSearch.jsx";
-// import BusBooking from "./Screen/Buses/Booking/BusBooking.jsx";
-// import Hotels from "./Screen/Hotels/Hotels.jsx";
-// import HotelsSearch from "./Screen/Hotels/Search/Search.jsx";
-// import HotelDetail from "./Screen/Hotels/HotelDetail/HotelDetail.jsx";
-// import HotelBooking from "./Screen/Hotels/HotelBooking/HotelBooking.jsx";
-// import Payment from "./Screen/Payment/Payment.jsx";
-
-import { defaultTheme } from "../Contexts/Theme.jsx";
-import AuthProvider from "../Contexts/AuthProvider.jsx";
-import SearchProvider from "../Contexts/SearchProdiver";
+import { defaultTheme } from "./Contexts/Theme.jsx";
+import AuthProvider from "./Contexts/AuthProvider.jsx";
+import SearchProvider from "./Contexts/SearchProdiver.jsx";
 import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs";
 import { LocalizationProvider } from "@mui/x-date-pickers/LocalizationProvider";
-import TrainSearchProvider from "../Contexts/TrainSearchProvider";
-import Footer from "./Common/Footer.jsx";
-import BusSearchProvider from "../Contexts/BusSearchProvider.jsx";
-import HotelSearchProvider from "../Contexts/HotelSearchProvider.jsx";
-import PaymentContextProvider from "../Contexts/PaymentContextProvider.jsx";
-import GlobalLoader from "./Common/GlobalLoader.jsx";
+import TrainSearchProvider from "./Contexts/TrainSearchProvider.jsx";
+import Footer from "./components/Common/Footer.jsx";
+import BusSearchProvider from "./Contexts/BusSearchProvider.jsx";
+import HotelSearchProvider from "./Contexts/HotelSearchProvider.jsx";
+import PaymentContextProvider from "./Contexts/PaymentContextProvider.jsx";
+import GlobalLoader from "./components/Common/GlobalLoader.jsx";
 import { Suspense, lazy } from "react";
 
-const Flights = lazy(() => import("./Screen/Flights/Flights.jsx"));
+const Flights = lazy(() => import("./components/Screen/Flights/Flights.jsx"));
 const FlightSearch = lazy(() =>
-	import("./Screen/Flights/Search/FlightSearch.jsx")
+	import("./components/Screen/Flights/Search/FlightSearch.jsx")
 );
 const FlightBooking = lazy(() =>
-	import("./Screen/Flights/Booking/FlightBooking.jsx")
+	import("./components/Screen/Flights/Booking/FlightBooking.jsx")
 );
-const Trains = lazy(() => import("./Screen/Trains/Trains.jsx"));
+const Trains = lazy(() => import("./components/Screen/Trains/Trains.jsx"));
 const TrainsSearch = lazy(() =>
-	import("./Screen/Trains/Search/TrainsSearch.jsx")
+	import("./components/Screen/Trains/Search/TrainsSearch.jsx")
 );
 const TrainBooking = lazy(() =>
-	import("./Screen/Trains/Booking/TrainBooking.jsx")
+	import("./components/Screen/Trains/Booking/TrainBooking.jsx")
 );
-const Buses = lazy(() => import("./Screen/Buses/Buses.jsx"));
+const Buses = lazy(() => import("./components/Screen/Buses/Buses.jsx"));
 
-const BusSearch = lazy(() => import("./Screen/Buses/Search/BusSearch.jsx"));
-const BusBooking = lazy(() => import("./Screen/Buses/Booking/BusBooking.jsx"));
-const Hotels = lazy(() => import("./Screen/Hotels/Hotels.jsx"));
-const HotelsSearch = lazy(() => import("./Screen/Hotels/Search/Search.jsx"));
+const BusSearch = lazy(() => import("./components/Screen/Buses/Search/BusSearch.jsx"));
+const BusBooking = lazy(() => import("./components/Screen/Buses/Booking/BusBooking.jsx"));
+const Hotels = lazy(() => import("./components/Screen/Hotels/Hotels.jsx"));
+const HotelsSearch = lazy(() => import("./components/Screen/Hotels/Search/Search.jsx"));
 const HotelDetail = lazy(() =>
-	import("./Screen/Hotels/HotelDetail/HotelDetail.jsx")
+	import("./components/Screen/Hotels/HotelDetail/HotelDetail.jsx")
 );
 const HotelBooking = lazy(() =>
-	import("./Screen/Hotels/HotelBooking/HotelBooking.jsx")
+	import("./components/Screen/Hotels/HotelBooking/HotelBooking.jsx")
 );
-const Payment = lazy(() => import("./Screen/Payment/Payment.jsx"));
+const Payment = lazy(() => import("./components/Screen/Payment/Payment.jsx"));
 
 function App() {
 	return (

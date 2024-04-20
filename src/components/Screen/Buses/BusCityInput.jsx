@@ -59,7 +59,7 @@ const BusCityInput = forwardRef(
 							color: "#000000",
 						},
 						"&.Mui-focused svg": {
-							color: "#ec5b24",
+							color: "#065af3",
 						},
 					}}
 					renderInput={(params) => (

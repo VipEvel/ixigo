@@ -1,7 +1,3 @@
-/*******************************
- Forms for login and signup.
- *******************************/
-
 import React, { useRef, useState } from "react";
 import { useAuthContext } from "../../Contexts/AuthProvider";
 

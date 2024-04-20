@@ -254,7 +254,7 @@ export default function Hotels() {
 								style={{
 									borderRadius: "4px",
 									border: openRoomsAndGuestPopper
-										? "2px solid #ec5b24"
+										? "2px solid #065af3"
 										: "1px solid rgba(0,0,0,0.2)",
 									padding: "8px 5px 14px",
 								}}
@@ -263,7 +263,7 @@ export default function Hotels() {
 									style={{
 										fontSize: 12,
 										color: openRoomsAndGuestPopper
-											? "#ec5b24"
+											? "#065af3"
 											: "rgba(0, 0, 0, 0.6)",
 										textAlign: "left",
 										marginLeft: "3px",
@@ -315,9 +315,9 @@ export default function Hotels() {
 											direction={"row"}
 											alignItems={"center"}
 											sx={{
-												color: "#ec5b24",
+												color: "#065af3",
 												fontWeight: 600,
-												border: "2px solid #ec5b24",
+												border: "2px solid #065af3",
 												borderRadius: "8px",
 												px: 1,
 												textAlign: "center",
@@ -392,9 +392,9 @@ export default function Hotels() {
 											direction={"row"}
 											alignItems={"center"}
 											sx={{
-												color: "#ec5b24",
+												color: "#065af3",
 												fontWeight: 600,
-												border: "2px solid #ec5b24",
+												border: "2px solid #065af3",
 												borderRadius: "8px",
 												px: 1,
 												textAlign: "center",

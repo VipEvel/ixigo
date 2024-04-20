@@ -3,16 +3,16 @@ import { createTheme } from "@mui/material";
 export const defaultTheme = createTheme({
 	palette: {
 		primary: {
-			main: "#ec5b24",
-			dark: "#ec5b24",
+			main: "#065af3",
+			dark: "#065af3",
 		},
 		// secondary: {
 		// 	main: "rgba(0, 0, 0, 0.87)",
 		// },
 		secondary: {
-			main: "#ec5b24",
+			main: "#065af3",
 			light: "rgba(0, 0, 0, 0.87)",
-			hover: "#ec5b24",
+			hover: "#065af3",
 		},
 		tabcolor: {
 			main: "#0770e4",
