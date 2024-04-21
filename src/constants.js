@@ -74,7 +74,7 @@ import { MdLocalBar } from "react-icons/md";
 import { CgGym } from "react-icons/cg";
 import { MdPool } from "react-icons/md";
 
-export const projectID = "hb4b95z8t9k9";
+export const projectID = "f104bi07c490";
 export const appType = "bookingportals";
 export const WEEKDAYS = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
 export const FLGIHT_DEPARTURE_TIME_RANGES = [
