@@ -222,7 +222,7 @@ export default function FlightBooking() {
 		<Box sx={{ mt: 8.2, width: "100%" }}>
 			<Box
 				sx={{
-					background: "linear-gradient(45deg,#721053,#AD2E41)",
+					background: "linear-gradient(45deg, #5a96f8, #045699)",
 					width: "100%",
 					pt: 2,
 					pb: 4,

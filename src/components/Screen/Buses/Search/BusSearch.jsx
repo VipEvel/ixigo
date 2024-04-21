@@ -265,7 +265,7 @@ export default function BusSearch() {
 				alignItems={"center"}
 				gap={4}
 				sx={{
-					background: "linear-gradient(45deg,#721053,#AD2E41)",
+					background: "linear-gradient(45deg, #5a96f8, #045699)",
 					py: 0.75,
 					position: "sticky",
 					top: "66px",

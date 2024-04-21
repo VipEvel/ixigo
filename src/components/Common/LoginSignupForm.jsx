@@ -10,7 +10,7 @@ import Tab from "@mui/material/Tab";
 import Tabs from "@mui/material/Tabs";
 import TextField from "@mui/material/TextField";
 import Typography from "@mui/material/Typography";
-import loginSignupImg from "../../assests/images/login-signup-banner.png";
+// import loginSignupImg from "../../assests/images/login-signup-banner.png";
 import { BiSolidError } from "react-icons/bi";
 
 const style = {
@@ -329,7 +329,7 @@ export default function LoginSignupForm() {
 			keepMounted
 		>
 			<Stack sx={style} direction={"row"}>
-				<img src={loginSignupImg} style={{ width: "300px" }} />
+				
 				<Stack
 					className="signup-login-form"
 					direction={"column"}
