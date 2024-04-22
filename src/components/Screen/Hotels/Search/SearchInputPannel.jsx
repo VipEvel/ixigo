@@ -141,13 +141,17 @@ export default function SearchInputPannel({
 	}, []);
 	return (
 		<Stack
+
+			
 			direction={"row"}
 			sx={{
-				bgcolor: "#fff",
+				// bgcolor: "#fab",
+				background: "linear-gradient(45deg, #5a96f8, #045699)",
 				width: "fit-cintent",
 				mx: "auto",
 				py: 1,
 				// px: 3,
+				color:"#fff",
 				mt: 3,
 				zIndex: 1150,
 				position: "sticky",
