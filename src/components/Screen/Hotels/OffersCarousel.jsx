@@ -70,7 +70,7 @@ const OffersCarousel = () => {
 				</IconButton>
 			)}
 			<Typography fontWeight={700} fontSize={22}>
-				Why Book Hotels With ixigo?
+				Why Book Hotels With  MakeMyTrip?
 			</Typography>
 			<Stack
 				ref={containerRef}

@@ -39,7 +39,7 @@ const guarantees = [
   { img: guaranteeIMG1, text: "₹0 Payment Gateway Fee on Payments via UPI" },
   {
     img: guaranteeIMG2,
-    text: "ixigo Assured: Free Cancellation of Train Tickets",
+    text: " MakeMyTrip Assured: Free Cancellation of Train Tickets",
   },
   {
     img: guaranteeIMG3,
