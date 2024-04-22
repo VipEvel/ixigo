@@ -189,7 +189,8 @@ export default function HotelCard({ hotelData, checkinDate, handleBook }) {
 							textTransform: "none",
 							boxShadow: "none",
 							borderRadius: "10px",
-							bgcolor: "rgb(252, 121, 13)",
+							// bgcolor: "rgb(252, 121, 13)",
+							background: "linear-gradient(45deg, #5a96f8, #045699)",
 							":hover": {
 								boxShadow: "none",
 								bgcolor: "rgb(253, 148, 61)",
@@ -197,7 +198,7 @@ export default function HotelCard({ hotelData, checkinDate, handleBook }) {
 						}}
 						onClick={() => handleBook(_id)}
 					>
-						Book Now
+						Book
 					</Button>
 				</Stack>
 			</Stack>

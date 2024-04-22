@@ -394,7 +394,9 @@ export default function HotelsSearch() {
 											textTransform: "none",
 											boxShadow: "none",
 											borderRadius: "10px",
-											bgcolor: "rgb(252, 121, 13)",
+											background: "linear-gradient(45deg, #5a96f8, #045699)",
+
+											// bgcolor: "rgb(252, 121, 13)",
 											":hover": {
 												boxShadow: "none",
 												bgcolor: "rgb(253, 148, 61)",

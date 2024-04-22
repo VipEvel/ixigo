@@ -37,7 +37,7 @@ const popperSX = {
 	py: 0.5,
 	px: 1,
 	fontSize: "14px",
-	bgcolor: "rgba(255,0,0,0.1)",
+	bgcolor: "rgba(254,0,0,0.1)",
 	color: "#D50000",
 	fontWeight: 500,
 	display: "flex",
@@ -466,7 +466,8 @@ export default function Hotels() {
 							fontSize: 20,
 							borderRadius: "8px",
 							boxShadow: "none",
-							bgcolor: "rgb(252, 121, 13)",
+							// bgcolor: "rgb(252, 121, 13)",
+							background: "linear-gradient(45deg, #5a96f8, #045699)",
 							":hover": {
 								boxShadow: "none",
 								bgcolor: "rgb(253, 148, 61)",

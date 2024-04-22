@@ -10,7 +10,7 @@ import Tab from "@mui/material/Tab";
 import Tabs from "@mui/material/Tabs";
 import TextField from "@mui/material/TextField";
 import Typography from "@mui/material/Typography";
-import loginSignupImg from "../../assests/images/login-signup-banner.png";
+// import loginSignupImg from "../../assests/images/login-signup-banner.png";
 import { BiSolidError } from "react-icons/bi";
 
 const style = {
@@ -110,7 +110,7 @@ function LogInTab() {
 			style={{ display: "flex", flexDirection: "column", gap: "24px" }}
 		>
 			<Typography variant="h5" component="h2" color={"rgba(0,0,0,0.87)"}>
-				Log in to ixigo
+				Log in to  MakeMyTrip
 			</Typography>
 			<TextField
 				label="Enter Email"
@@ -133,7 +133,7 @@ function LogInTab() {
 			</Button>
 			<Box sx={{ mt: 2 }}>
 				<Typography variant="caption" color="rgba(0,0,0,0.74)">
-					By signing up, I understand & agree to ixigo terms of use
+					By signing up, I understand & agree to  MakeMyTrip terms of use
 					and privacy policy
 				</Typography>
 				<br />
@@ -242,7 +242,7 @@ function SignUpTab() {
 			onSubmit={handleSignUpButton}
 		>
 			<Typography variant="h5" component="h2" color={"rgba(0,0,0,0.87)"}>
-				Sign up to ixigo
+				Sign up to  MakeMyTrip
 			</Typography>
 			<TextField
 				onChange={removeError}
@@ -279,7 +279,7 @@ function SignUpTab() {
 			</Button>
 			<Box>
 				<Typography variant="caption" color="rgba(0,0,0,0.74)">
-					By signing up, I understand & agree to ixigo terms of use
+					By signing up, I understand & agree to  MakeMyTrip terms of use
 					and privacy policy
 				</Typography>
 				<br />
@@ -329,7 +329,7 @@ export default function LoginSignupForm() {
 			keepMounted
 		>
 			<Stack sx={style} direction={"row"}>
-				<img src={loginSignupImg} style={{ width: "300px" }} />
+				
 				<Stack
 					className="signup-login-form"
 					direction={"column"}

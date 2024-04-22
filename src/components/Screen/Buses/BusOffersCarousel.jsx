@@ -164,10 +164,10 @@ function BusOffersCarousel() {
 			</Stack>
 			<Box sx={{ maxWidth: "1250px", mx: "auto" }}>
 				<Typography fontSize={24} fontWeight={600}>
-					Why Choose ixigo for Bus Ticket Booking?
+					Why Choose  MakeMyTrip for Bus Ticket Booking?
 				</Typography>
 				<Typography fontSize={14} sx={{ mt: 1 }}>
-					ixigo Bus Booking is powered by AbhiBus which is India’s
+					 MakeMyTrip Bus Booking is powered by AbhiBus which is India’s
 					fastest growing online ticket booking platform. AbhiBus is
 					the official ticketing partner of several State Road
 					Transport Corporation (SRTC) operators and over 3500+

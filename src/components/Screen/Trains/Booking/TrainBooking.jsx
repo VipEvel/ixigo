@@ -149,7 +149,7 @@ export default function TrainBooking() {
 		<Box sx={{ mt: 8.2, width: "100%", mb: 3 }}>
 			<Box
 				sx={{
-					background: "linear-gradient(45deg,#721053,#AD2E41)",
+					background: "linear-gradient(45deg, #5a96f8, #045699)",
 					width: "100%",
 					p: 2,
 				}}
