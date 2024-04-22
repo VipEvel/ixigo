@@ -174,7 +174,7 @@ export default function TrainsSearch() {
 				className="train-search-pannel"
 				gap={4}
 				sx={{
-					background: "linear-gradient(45deg, #5a96f8, #045699)",
+					background: "linear-gradient(0deg,#15457b,#051423)",
 					py: 1,
 				}}
 			>

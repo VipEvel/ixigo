@@ -22,6 +22,7 @@ import { BsDoorOpen } from "react-icons/bs";
 import { MdOutlinePeopleAlt } from "react-icons/md";
 import { FiMinus } from "react-icons/fi";
 import { FiPlus } from "react-icons/fi";
+import '../../../styles/Flights.css';
 
 const buttonProps = {
 	disableRipple: true,
@@ -126,9 +127,33 @@ export default function Hotels() {
 	}
 	useEffect(() => window.scrollTo(0, 0), []);
 	return (
-		<Box sx={{ mt: 8.2, pt: 4 }}>
+		<Box sx={{
+			mt: 8.2, pt: 4, backgroundImage:
+				"url('//imgak.mmtcdn.com/pwa_v3/pwa_commons_assets/desktop/bg1.jpg')",
+			width: "100%",
+			height: "550px",
+			backgroundSize: "cover",
+			backgroundRepeat: "no-repeat",
+			backgroundPosition: "center",
+		}}>
 			<Container>
-				<Typography variant="h4">Plan Your Holidays</Typography>
+				<div style={{ position: "relative" }}>
+					<Stack
+						direction={"row"}
+						gap={1}
+						sx={{
+							pt: "150px",
+							pb: "120px",
+							width: "fit-content",
+							margin: "auto",
+							alignItems: "center",
+						}}
+					>
+						<Typography variant="h5" color={"#fff"} fontWeight={600}>
+							Plan Your Holidays
+						</Typography>
+					</Stack>
+				</div>
 				<Stack
 					direction={"row"}
 					sx={{
@@ -167,8 +192,8 @@ export default function Hotels() {
 							setLocation(
 								v
 									? LOCATIONS.findIndex(
-											(i) => i.city == v.city
-									  )
+										(i) => i.city == v.city
+									)
 									: ""
 							);
 						}}
@@ -459,20 +484,7 @@ export default function Hotels() {
 
 					<Button
 						variant="contained"
-						sx={{
-							textTransform: "none",
-							px: 6,
-							py: 1.5,
-							fontSize: 20,
-							borderRadius: "8px",
-							boxShadow: "none",
-							// bgcolor: "rgb(252, 121, 13)",
-							background: "linear-gradient(45deg, #5a96f8, #045699)",
-							":hover": {
-								boxShadow: "none",
-								bgcolor: "rgb(253, 148, 61)",
-							},
-						}}
+						className="search-button"
 						onClick={validateAndFetch}
 					>
 						Search

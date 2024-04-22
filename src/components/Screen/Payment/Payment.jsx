@@ -12,7 +12,6 @@ import {
 } from "@mui/material";
 import React, { useEffect, useState } from "react";
 import { FaRegClock } from "react-icons/fa6";
-import { UpiActive, Upi } from "./Upi";
 import { CardActive, Card } from "./Card";
 
 import inputCard from "../../../assests/images/payment/jp_default_card.png";
@@ -20,7 +19,6 @@ import { usePaymentContext } from "../../../Contexts/PaymentContextProvider";
 import BookingModal from "../../Common/BookingModal";
 import { Link, useNavigate } from "react-router-dom";
 import { CURRENCY_FORMATTER } from "../../../utils";
-import UpiTab from "./UpiTab";
 
 export default function Payment() {
 	const { bookingFunction, paymentIsPending, setPaymentisPending, amount } =
@@ -34,7 +32,6 @@ export default function Payment() {
 		message: "",
 	});
 	const [generatingQR, setGeneratingQR] = useState(false);
-	const [qrCodeGenerated, setQRCodeGenerated] = useState(false);
 	const [showModal, setShowModal] = useState(false);
 	const [cardNumber, setCardNumber] = useState("");
 	const [cardHasError, setCardHasError] = useState(false);
@@ -133,14 +130,6 @@ export default function Payment() {
 			setCvvHasError(true);
 		}
 	}
-	function handleGenerateQRCode() {
-		if (!generatingQR) {
-			setGeneratingQR(true);
-			setTimeout(() => {
-				setQRCodeGenerated(true);
-			}, 2000);
-		}
-	}
 	useEffect(() => {
 		if (!paymentIsPending) {
 			navigate("/");
@@ -227,21 +216,6 @@ export default function Payment() {
 						}}
 					>
 						<Tab
-							label="UPI"
-							icon={tabIndex === 0 ? <UpiActive /> : <Upi />}
-							iconPosition="start"
-							sx={{
-								width: "250px",
-								display: "flex",
-								gap: 2,
-								justifyContent: "flex-start",
-								bgcolor: tabIndex === 0 ? "#065af310" : "",
-								fontSize: 20,
-								fontWeight: 600,
-								textTransform: "none",
-							}}
-						/>
-						<Tab
 							label="Credit/Debit Card"
 							icon={tabIndex === 1 ? <CardActive /> : <Card />}
 							iconPosition="start"
@@ -257,132 +231,115 @@ export default function Payment() {
 							}}
 						/>
 					</Tabs>
-					<UpiTab
-						{...{
-							tabIndex,
-							qrCodeGenerated,
-							showModal,
-							handleGenerateQRCode,
-							generatingQR,
-							setShowModal,
-							handlePay,
-							time,
-							mins,
-							secs,
-							setQRCodeGenerated,
-							setGeneratingQR,
-						}}
-					/>
 					<Box
 						role="tabpanel"
-						hidden={tabIndex !== 1}
 						sx={{ width: "100%" }}
 					>
-						{tabIndex === 1 && (
-							<Stack
-								gap={3}
-								alignItems={"flex-start"}
-								sx={{ my: 3, width: "100%" }}
-							>
-								<Typography sx={{ px: 3 }}>
-									Enter Credit / Debit Card Details
-								</Typography>
-								<Divider flexItem />
-								<TextField
-									error={cardHasError}
-									label="Card Number"
-									placeholder="Enter Card Number"
-									variant="standard"
-									helperText={
-										cardHasError
-											? "Card number is either not of 16 digits or it is non-numeric"
-											: ""
-									}
-									sx={{ ml: 3, width: 400 }}
-									InputLabelProps={{ shrink: true }}
-									value={cardNumber}
-									onChange={handleCardChange}
-									InputProps={{
-										endAdornment: (
-											<img
-												src={inputCard}
-												style={{
-													width: "30px",
-													objectFit: "contain",
-												}}
-											/>
-										),
-									}}
-									inputProps={{ maxLength: 19 }}
-								/>
-								<Stack sx={{ px: 3 }}>
-									<Typography>Expiry Date</Typography>
-									<Stack direction={"row"} gap={2}>
-										<TextField
-											error={monthHasError}
-											helperText={
-												monthHasError
-													? "Invalid Month"
-													: ""
-											}
-											label="Month"
-											placeholder="MM"
-											variant="standard"
-											value={expiryMonth}
-											onChange={handleExpiryMonthChange}
-											type="number"
-											InputLabelProps={{ shrink: true }}
+
+						<Stack
+							gap={3}
+							alignItems={"flex-start"}
+							sx={{ my: 3, width: "100%" }}
+						>
+							<Typography sx={{ px: 3 }}>
+								Enter Credit / Debit Card Details
+							</Typography>
+							<Divider flexItem />
+							<TextField
+								error={cardHasError}
+								label="Card Number"
+								placeholder="Enter Card Number"
+								variant="standard"
+								helperText={
+									cardHasError
+										? "Card number is either not of 16 digits or it is non-numeric"
+										: ""
+								}
+								sx={{ ml: 3, width: 400 }}
+								InputLabelProps={{ shrink: true }}
+								value={cardNumber}
+								onChange={handleCardChange}
+								InputProps={{
+									endAdornment: (
+										<img
+											src={inputCard}
+											style={{
+												width: "30px",
+												objectFit: "contain",
+											}}
 										/>
-										<TextField
-											error={yearHasError}
-											helperText={
-												yearHasError
-													? "Invalid Year"
-													: ""
-											}
-											type="number"
-											label="Year"
-											placeholder="YYYY"
-											variant="standard"
-											value={expiryYear}
-											onChange={handleExpiryYearChange}
-											InputLabelProps={{ shrink: true }}
-										/>
-									</Stack>
+									),
+								}}
+								inputProps={{ maxLength: 19 }}
+							/>
+							<Stack sx={{ px: 3 }}>
+								<Typography>Expiry Date</Typography>
+								<Stack direction={"row"} gap={2}>
+									<TextField
+										error={monthHasError}
+										helperText={
+											monthHasError
+												? "Invalid Month"
+												: ""
+										}
+										label="Month"
+										placeholder="MM"
+										variant="standard"
+										value={expiryMonth}
+										onChange={handleExpiryMonthChange}
+										type="number"
+										InputLabelProps={{ shrink: true }}
+									/>
+									<TextField
+										error={yearHasError}
+										helperText={
+											yearHasError
+												? "Invalid Year"
+												: ""
+										}
+										type="number"
+										label="Year"
+										placeholder="YYYY"
+										variant="standard"
+										value={expiryYear}
+										onChange={handleExpiryYearChange}
+										InputLabelProps={{ shrink: true }}
+									/>
 								</Stack>
-								<TextField
-									sx={{ ml: 3 }}
-									error={cvvHasError}
-									helperText={
-										cvvHasError ? "Invalid CVV" : ""
-									}
-									type="password"
-									label="CVV"
-									placeholder="XXX"
-									variant="standard"
-									InputLabelProps={{ shrink: true }}
-									value={cvv}
-									onChange={handleCvvChange}
-								/>
-								<Button
-									disabled={
-										!(
-											isValidCardNumber(cardNumber) &&
-											isValidExpiryMonth(expiryMonth) &&
-											isValidExpiryYear(expiryYear) &&
-											isValidCVV(cvv)
-										)
-									}
-									disableRipple
-									variant="contained"
-									onClick={handlePay}
-									size="large"
-									sx={{ ml: 3, px: 3 }}
-								>
-									Pay
-								</Button>
 							</Stack>
-						)}
+							<TextField
+								sx={{ ml: 3 }}
+								error={cvvHasError}
+								helperText={
+									cvvHasError ? "Invalid CVV" : ""
+								}
+								type="password"
+								label="CVV"
+								placeholder="XXX"
+								variant="standard"
+								InputLabelProps={{ shrink: true }}
+								value={cvv}
+								onChange={handleCvvChange}
+							/>
+							<Button
+								disabled={
+									!(
+										isValidCardNumber(cardNumber) &&
+										isValidExpiryMonth(expiryMonth) &&
+										isValidExpiryYear(expiryYear) &&
+										isValidCVV(cvv)
+									)
+								}
+								disableRipple
+								variant="contained"
+								onClick={handlePay}
+								size="large"
+								sx={{ ml: 3, px: 3 }}
+							>
+								Pay
+							</Button>
+						</Stack>
+
 					</Box>
 				</Stack>
 			</Stack>
