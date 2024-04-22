@@ -489,8 +489,10 @@ export default function HotelDetail() {
 														py: 1.5,
 														px: 2,
 														// m: "auto",
-														bgcolor:
-															"rgb(252, 121, 13)",
+														// bgcolor:
+														// 	"rgb(252, 121, 13)",
+															background: "linear-gradient(45deg, #5a96f8, #045699)",
+
 														boxShadow: "none",
 														":hover": {
 															boxShadow: "none",
